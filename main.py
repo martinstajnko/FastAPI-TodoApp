@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import models
-from database_postgre import engine
+from database_postgre import engine # changed from database_postgre to database for using SQLite
 from routers import auth, todos, users
 from starlette.staticfiles import StaticFiles
 from starlette import status
