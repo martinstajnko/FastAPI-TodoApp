@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "4_fastapi_udemy"
+version = "0.1.0"
+description = ""
+authors = ["martinstajnko <stajnko.martin93@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.79.0"
+uvicorn = {extras = ["standard"], version = "^0.18.2"}
+python-multipart = "^0.0.5"
+SQLAlchemy = "^1.4.40"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+psycopg2-binary = "^2.9.3"
+aiofiles = "^0.8.0"
+Jinja2 = "^3.1.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
