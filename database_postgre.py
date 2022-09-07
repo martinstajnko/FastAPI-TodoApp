@@ -25,7 +25,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 POSTGRESQL_DATABASE_URL = os.environ.get('DATABASE_URL')
-if POSTGRESQL_DATABASE_URL.startwith("postgres://"):
+if POSTGRESQL_DATABASE_URL.startswith("postgres://"):
     POSTGRESQL_DATABASE_URL = POSTGRESQL_DATABASE_URL.replace("postgres://", "postgresql://", 1)
 
 # As a user we need to use superuser
